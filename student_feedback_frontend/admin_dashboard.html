@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📊 Admin Dashboard | Student Feedback System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container admin-dashboard">
+    <h1 class="title">📊 Admin Dashboard</h1>
+    <p class="subtitle">Monitor student feedback, review trends, and improve academic experiences.</p>
+
+    <div class="dashboard-actions">
+      <button class="btn" onclick="location.href='add_course.html'">➕ Add New Course</button>
+      <button class="btn" onclick="location.href='manage_courses.html'">🛠️ Manage Courses</button>
+      <button class="btn" onclick="location.href='view_feedbacks.html'">📥 View All Feedback</button>
+      <button class="btn" onclick="location.href='assign_course.html'">🤝 Assign Course</button>
+    </div>
+
+    <div class="quick-stats">
+      <div class="card stat-card">
+        <h3>📚 Total Courses</h3>
+        <p id="totalCourses">0</p>
+      </div>
+      <div class="card stat-card">
+        <h3>👨‍🎓 Total Students</h3>
+        <p id="totalStudents">0</p>
+      </div>
+      <div class="card stat-card">
+        <h3>💬 Total Feedback</h3>
+        <p id="totalFeedback">0</p>
+      </div>
+    </div>
+
+    <div class="nav-link">
+      👋 <a href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <script src="static/utils.js"  charset="UTF-8"></script>
+  <script src="static/admin.js"  charset="UTF-8"></script>
+</body>
+</html>

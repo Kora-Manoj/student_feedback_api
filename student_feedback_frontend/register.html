@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📝 Register | Student Feedback Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container auth-container">
+    <h2 class="title">📝 Student Registration</h2>
+    <p class="subtitle">Join the portal and make your feedback count 📢</p>
+
+    <form id="registerForm" class="auth-form">
+      <label for="username">👤 Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="email">📧 Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">🔒 Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit" class="btn btn-primary">✅ Register</button>
+    </form>
+
+    <div id="registerMessage" class="message"></div>
+
+    <p class="nav-link">
+      Already have an account? <a href="login.html">Login here</a> 🔐
+    </p>
+
+    <footer class="footer">
+      &copy; 2025 Feedback System | Built with 💡 by Dream
+    </footer>
+  </div>
+
+  <script src="static/utils.js" charset="UTF-8"></script>
+  <script src="static/main.js" charset="UTF-8"></script>
+</body>
+</html>

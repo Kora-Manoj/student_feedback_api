@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🤝 Assign Course | Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container course-form-container">
+    <h2 class="title">🤝 Assign Course to Student</h2>
+    <p class="subtitle">Select a student and a course to create an assignment.</p>
+
+    <form id="assignCourseForm" class="course-form">
+      <label for="studentSelect">👨‍🎓 Select Student</label>
+      <select id="studentSelect" name="student" required>
+        <option value="">-- Loading Students --</option>
+      </select>
+
+      <label for="courseSelect">📚 Select Course</label>
+      <select id="courseSelect" name="course" required>
+        <option value="">-- Loading Courses --</option>
+      </select>
+
+      <button type="submit" class="btn">🔗 Assign Course</button>
+    </form>
+
+    <div id="assignMessage" class="message"></div>
+
+    <p class="nav-link">
+      🔙 <a href="admin_dashboard.html">Back to Dashboard</a> | 👋 <a href="login.html">Logout</a>
+    </p>
+  </div>
+
+  <script src="static/utils.js" charset="UTF-8"></script>
+  <script src="static/assign_course.js" charset="UTF-8"></script>
+</body>
+</html>

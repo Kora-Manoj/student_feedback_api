@@ -1,0 +1,368 @@
+/* 📁 css/style.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height to ensure content fits */
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 480px; /* Default max-width */
+  margin: 50px auto; /* Added margin for vertical spacing */
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+  border: none; /* Ensure buttons don't have default borders */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 500px) {
+  .btn {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+/* Registration/Login Form Styles */
+.auth-container {
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px; /* Specific max-width for auth forms */
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.auth-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  text-align: center; /* Center messages */
+}
+.message.success {
+    color: green;
+}
+.message.error {
+    color: crimson;
+}
+
+.nav-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.nav-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+  max-width: 800px; /* Wider for dashboard */
+}
+
+.course-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.course-card {
+  padding: 20px;
+  background-color: #f0f8ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  text-align: left; /* Align text within cards */
+}
+
+.course-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  margin-bottom: 8px;
+  color: #1d4ed8;
+}
+
+.course-card p {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.course-card a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.course-card a:hover {
+  background-color: #1e40af;
+}
+
+/* Submit_Feedback Form Styles */
+.feedback-container {
+    max-width: 600px; /* Specific width for feedback form */
+}
+.feedback-form .form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus,
+.feedback-form select:focus {
+  border-color: #0057d8;
+  outline: none;
+}
+
+
+/* Admin Dashboard */
+.admin-dashboard {
+    max-width: 900px; /* Wider for admin dashboard */
+}
+.admin-dashboard .dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.admin-dashboard .dashboard-actions .btn {
+    background-color: #0057d8; /* Admin buttons primary color */
+    color: white;
+}
+.admin-dashboard .dashboard-actions .btn:hover {
+    background-color: #0040b3;
+}
+
+
+.quick-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 200px; /* Flex basis for wrapping */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.stat-card p {
+  font-size: 2rem;
+  color: #0057d8;
+  margin: 10px 0 0;
+}
+
+/* Course Form Styles (Add Course) */
+.course-form-container {
+  max-width: 600px; /* Specific width for course form */
+}
+.course-form label {
+  display: block;
+  margin-top: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.course-form input,
+.course-form textarea,
+.course-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.course-form .btn {
+  margin-top: 1.5rem;
+  background-color: #0057d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.course-form .btn:hover {
+  background-color: #0047ba;
+}
+
+/* Admin Course List (manage_courses.html) */
+.course-list-admin {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.course-list-admin .course-card {
+  padding: 15px;
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.course-list-admin .course-card h3 {
+  color: #0056b3;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.course-list-admin .course-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Admin Feedback List (view_feedbacks.html) */
+.feedback-list-admin {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.feedback-list-admin .feedback-card {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.feedback-list-admin .feedback-card h3 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.feedback-list-admin .feedback-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.feedback-list-admin .feedback-card .timestamp {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  margin-top: 10px;
+}
